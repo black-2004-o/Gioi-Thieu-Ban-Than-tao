@@ -48,6 +48,18 @@ border-radius:50%;
 border:4px solid #00ffff;
 margin-bottom:15px;
 object-fit:cover;
+animation:avatarGlow 3s infinite alternate;
+}
+
+/* Avatar glow */
+
+@keyframes avatarGlow{
+0%{
+box-shadow:0 0 10px #00ffff;
+}
+100%{
+box-shadow:0 0 30px #00ffff;
+}
 }
 
 /* Text */
@@ -61,6 +73,12 @@ font-size:22px;
 color:#00ffff;
 margin-bottom:15px;
 font-size:14px;
+}
+
+.title{
+color:#00ffff;
+margin-bottom:10px;
+letter-spacing:1px;
 }
 
 .info{
@@ -91,6 +109,15 @@ font-size:15px;
 background:#00ffff;
 color:black;
 transform:scale(1.05);
+}
+
+/* Footer */
+
+.footer{
+margin-top:20px;
+font-size:12px;
+opacity:0.6;
+text-align:center;
 }
 
 /* Animation */
@@ -160,6 +187,8 @@ Nhân viên | Bệnh viện Đa khoa Vạn An
 
 <div class="info">
 
+<h3 class="title">Giới thiệu</h3>
+
 <p>👋 Xin chào, tôi là Hiếu</p>
 
 <p>📍 Hiện đang sinh sống và làm việc tại Việt Nam</p>
@@ -195,18 +224,23 @@ Nhân viên | Bệnh viện Đa khoa Vạn An
 <div class="links">
 
 <a href="https://www.facebook.com/issei.hyoudo.330">
-Facebook
+📘 Facebook
 </a>
 
 <a href="https://instagram.com/ong.dia.1211">
-Instagram
+📷 Instagram
 </a>
 
 <a href="https://tiktok.com/@only09.05">
-TikTok
+🎵 TikTok
 </a>
 
 </div>
+
+<div class="footer">
+© 2026 Trung Hiếu
+</div>
+
 </div>
 
 </body>
